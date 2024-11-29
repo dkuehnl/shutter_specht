@@ -1,13 +1,64 @@
-body {
-  background-color: gray;
-  margin: 0;
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-weight: normal;
 }
 
-header {
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  /*body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }*/
+}
+
+#header {
+  width: auto; 
   background-color: white;
-  height: 50px; 
+  height: 3.5rem; 
+  display: flex; 
+  align-items: center;
 }
 
-.logo_name {
+#logo_name {
   margin: 0; 
+  margin-left: 1rem; 
 }
+
+#logo {
+  margin-left: 15rem; 
+  height: 3rem; 
+}
+
+#welcome_picture {
+  width: 100vw;
+  height: 35rem;
+  position: relative;
+  background-image: url("./pictures/wedding.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: -3rem;
+}
+
