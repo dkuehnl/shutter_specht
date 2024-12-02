@@ -55,7 +55,6 @@ a,
 }
 
 #service_content {
-  width: 100vw;
   height: 60vw;
   position: relative;
   background-image: 
@@ -199,6 +198,7 @@ a,
 #gallery_content {
   background-color: white;
   height: 100vh;
+  margin-bottom: 6rem;
 }
 
 .upper_flexbox {
@@ -269,4 +269,70 @@ a,
 .box_image--street {
   object-fit: cover;
   object-position: 0 -6.2rem;
+}
+
+#contact_frm {
+  background-color: #243447;
+  padding: 5rem 0 5rem 0;
+}
+
+.frm_heading {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.frm_text {
+  color: #ffffff;
+  padding-top: 0.3rem;
+}
+
+.flexbox--frm {
+  background-image: linear-gradient(
+    90deg, 
+    transparent calc(50% - 0.1rem), 
+    rgba(255, 255, 255, 0.5) calc(50% - 0.1rem),
+    rgba(255, 255, 255, 0.5) calc(50% + 0.1rem),
+    transparent calc(50% + 0.1rem));
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.content_left {
+  flex: 0 0 50%;
+  margin-top: 4rem;
+  padding-left: 16rem;
+  padding-right: 1.5rem;
+  text-align: right; 
+}
+
+.content_right {
+  flex: 0 0 50%;
+  margin-top: 1rem;
+  max-width: initial;
+  margin-left: initial; 
+  margin-right: initial;
+}
+
+.form_input_container {
+  text-align: center;
+}
+
+input.form_input[type="text"], 
+input.form_input[type="email"], 
+textarea.form_textarea {
+  appearance: none;
+  border: 0.1rem solid black;
+  border-radius: 0.3rem;
+  width: 90%; 
+  height: 1.8rem;
+  margin-bottom: 1rem;
+  font-family: inherit; 
+  padding-left: 0.3rem;
+}
+
+.form_textarea {
+  min-height: 10rem;
+  padding-top: 0.3rem;
 }

@@ -83,6 +83,42 @@ import TheWelcome from './components/TheWelcome.vue'
     </div>
   </section>
 
+  
+  <section id="contact_frm">
+    <div class="container">
+      <div class="flexbox flexbox--frm">
+        <div class="content_left">
+          <h4 class="frm_heading">Jetzt Termin sichern!</h4>
+          <p class="frm_text">
+            Einfach das Formular ausfüllen, 
+            Wunsch-Termin auswählen und ich 
+            werde mich schnellstmöglich mit 
+            dir in Verbindung setzen. 
+          </p>
+        </div>
+        <div class="content_right">
+          <form class="form" action="#" methode="GET">
+            <div class="form_input_container">
+              <input class="form_input" type="text" name="name" placeholder="Dein Name...">
+            </div>
+            <div class="form_input_container">
+              <input class="form_input" type="email" name="email" placeholder="Deine E-Mail-Adresse...">
+            </div>
+            <div class="form_input_container">
+              <input class="form_input" type="text" name="phone" placeholder="Deine Handynummer...">
+            </div>
+            <div class="form_input_container">
+              <input class="form_input" type="text" name="date" placeholder="Gewünschter Termin...">
+            </div>
+            <div class="form_input_container">
+              <textarea class="form_textarea" placeholder="Deine Nachricht..."></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </template>
 
 <style>
