@@ -1,4 +1,4 @@
-<script setup>
+<script>
 
 </script>
 
@@ -6,12 +6,13 @@
   <header>
     <div id="header">
       <div id="header_logo">
-        <img id="logo" src="./assets/Logo.png" alt="Logo ShutterSpecht"/>
+        <img src="./assets/Logo.png" alt="Logo ShutterSpecht"/>
         <a class="link" href="#">
           <h1 id="logo_name">ShutterSpecht</h1>
         </a>
       </div>
       <nav class="header_nav">
+        <button @click="menu_function()" class="header_nav__btn" aria-label="Menu">☰</button>
         <ul class="header_nav__ul">
           <li class="header_nav__li">
             <a href="#service" class="link header_nav__link">Services</a>
@@ -26,7 +27,8 @@
       </nav>
     </div>
   </header>
-  <section id="service_content">
+  <section id="section_service">
+    <div id="platzhalter"></div>
     <div id="service">
       <div class="container">
         <h2 class="section_heading">Service ist alles</h2>
@@ -135,6 +137,14 @@
 
 </template>
 
-<style>
-
-</style>
+<script lang="js">
+  export default {
+    methods: {
+      menu_function() {
+        console.log("Test");
+        const menu = document.querySelector('.header_nav__ul');
+        menu.classList.toggle('open');
+      }
+    }
+  };
+</script>
