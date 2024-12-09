@@ -1,16 +1,34 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+<script>
+
 </script>
 
 <template>
   <header>
     <div id="header">
-      <img id="logo" src="./assets/Logo.png" alt="Logo ShutterSpecht"/>
-      <h1 id="logo_name">ShutterSpecht</h1>
+      <div id="header_logo">
+        <img src="./assets/Logo.png" alt="Logo ShutterSpecht"/>
+        <a class="link" href="#">
+          <h1 id="logo_name">ShutterSpecht</h1>
+        </a>
+      </div>
+      <nav class="header_nav">
+        <button @click="menu_function()" class="header_nav__btn" aria-label="Menu">☰</button>
+        <ul class="header_nav__ul">
+          <li class="header_nav__li">
+            <a href="#service" class="link header_nav__link">Services</a>
+          </li>
+          <li class="header_nav__li">
+            <a href="#gallery_content" class="link header_nav__link">Gallery</a>
+          </li>
+          <li class="header_nav__li header_nav__li--desktop">
+            <a href="#contact_frm" class="link header_nav__link">Book now</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
-  <section id="service_content">
+  <section id="section_service">
+    <div id="platzhalter"></div>
     <div id="service">
       <div class="container">
         <h2 class="section_heading">Service ist alles</h2>
@@ -56,9 +74,7 @@ import TheWelcome from './components/TheWelcome.vue'
         <div class="upper_flexbox">
           <div class="gallery_box">
             <img class="box_image box_image--protrait" src="./assets/pictures/personal.jpg" alt="Gallery-Image Portrait" />
-            <div class="box_heading box_heading--gallery">
-              <h4 class="">Portrait</h4>
-            </div>
+              <h4 class="box_heading box_heading--gallery">Portrait</h4>
           </div>
           <div class="gallery_box">
             <img class="box_image box_image--wedding" src="./assets/pictures/wedding.jpg" alt="Gallery-Image Wedding" />
@@ -83,8 +99,52 @@ import TheWelcome from './components/TheWelcome.vue'
     </div>
   </section>
 
+  
+  <section id="contact_frm">
+    <div class="container">
+      <div class="flexbox flexbox--frm">
+        <div class="content_left">
+          <h4 class="frm_heading">Jetzt Termin sichern!</h4>
+          <p class="frm_text">
+            Einfach das Formular ausfüllen, 
+            Wunsch-Termin auswählen und ich 
+            werde mich schnellstmöglich mit 
+            dir in Verbindung setzen. 
+          </p>
+        </div>
+        <div class="content_right">
+          <form class="form" action="#" methode="GET">
+            <div class="form_input_container">
+              <input class="form_input" type="text" name="name" placeholder="Dein Name...">
+            </div>
+            <div class="form_input_container">
+              <input class="form_input" type="email" name="email" placeholder="Deine E-Mail-Adresse...">
+            </div>
+            <div class="form_input_container">
+              <input class="form_input" type="text" name="phone" placeholder="Deine Handynummer...">
+            </div>
+            <div class="form_input_container">
+              <input class="form_input" type="text" name="date" placeholder="Gewünschter Termin...">
+            </div>
+            <div class="form_input_container">
+              <textarea class="form_textarea" placeholder="Deine Nachricht..."></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </template>
 
-<style>
-
-</style>
+<script lang="js">
+  export default {
+    methods: {
+      menu_function() {
+        console.log("Test");
+        const menu = document.querySelector('.header_nav__ul');
+        menu.classList.toggle('open');
+      }
+    }
+  };
+</script>
