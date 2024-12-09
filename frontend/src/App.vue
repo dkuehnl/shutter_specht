@@ -1,13 +1,29 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+
 </script>
 
 <template>
   <header>
     <div id="header">
-      <img id="logo" src="./assets/Logo.png" alt="Logo ShutterSpecht"/>
-      <h1 id="logo_name">ShutterSpecht</h1>
+      <div id="header_logo">
+        <img id="logo" src="./assets/Logo.png" alt="Logo ShutterSpecht"/>
+        <a class="link" href="#">
+          <h1 id="logo_name">ShutterSpecht</h1>
+        </a>
+      </div>
+      <nav class="header_nav">
+        <ul class="header_nav__ul">
+          <li class="header_nav__li">
+            <a href="#service" class="link header_nav__link">Services</a>
+          </li>
+          <li class="header_nav__li">
+            <a href="#gallery_content" class="link header_nav__link">Gallery</a>
+          </li>
+          <li class="header_nav__li header_nav__li--desktop">
+            <a href="#contact_frm" class="link header_nav__link">Book now</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
   <section id="service_content">
@@ -56,9 +72,7 @@ import TheWelcome from './components/TheWelcome.vue'
         <div class="upper_flexbox">
           <div class="gallery_box">
             <img class="box_image box_image--protrait" src="./assets/pictures/personal.jpg" alt="Gallery-Image Portrait" />
-            <div class="box_heading box_heading--gallery">
-              <h4 class="">Portrait</h4>
-            </div>
+              <h4 class="box_heading box_heading--gallery">Portrait</h4>
           </div>
           <div class="gallery_box">
             <img class="box_image box_image--wedding" src="./assets/pictures/wedding.jpg" alt="Gallery-Image Wedding" />
