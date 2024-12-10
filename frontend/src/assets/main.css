@@ -267,8 +267,10 @@ html {
   box-shadow: 1rem 1rem 5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-.service_box:hover {
-  transform: scale(1.1);
+@media (min-width: 62rem) {
+  .service_box:hover {
+    transform: scale(1.1);
+  }
 }
 
 .box_image {
@@ -404,10 +406,10 @@ html {
     flex: 0 0 21rem;
     height: 20rem;
   }
-}
 
-.gallery_box:hover {
-  transform: scale(1.1);
+  .gallery_box:hover {
+    transform: scale(1.1);
+  }  
 }
 
 .box_heading--gallery {
