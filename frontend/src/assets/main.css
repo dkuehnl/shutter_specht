@@ -1,9 +1,7 @@
 @import './base.css';
-@import './fonts/Montserrat/webfonts/Montserrat.css';
 
 html {
   scroll-behavior: smooth;
-  color: #000000;
 }
 
 #app {
@@ -15,7 +13,7 @@ html {
 
 .link {
   text-decoration: none;
-  color: #000000;
+  color: inherit;
   cursor: pointer;
 }
 
