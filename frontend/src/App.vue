@@ -18,10 +18,10 @@
             <a href="#service" class="link header_nav__link">Services</a>
           </li>
           <li class="header_nav__li">
-            <a href="#gallery_content" class="link header_nav__link">Gallery</a>
+            <a href="#section_gallery" class="link header_nav__link">Gallery</a>
           </li>
           <li class="header_nav__li header_nav__li--desktop">
-            <a href="#contact_frm" class="link header_nav__link">Book now</a>
+            <a href="#section_contact" class="link header_nav__link">Book now</a>
           </li>
         </ul>
       </nav>
@@ -51,7 +51,7 @@
     </div>
   </section>
 
-  <section id="event_content">
+  <section id="section_event">
     <div class="container">
       <div class="event_description">
         <h2 class="heading_event">
@@ -67,7 +67,7 @@
     </div>
   </section>
 
-  <section id="gallery_content">
+  <section id="section_gallery">
     <div class="container">
       <h2 class="section_heading section_heading--gallery">Gallery</h2>
       <div class="flexbox flexbox--gallery">
@@ -100,7 +100,7 @@
   </section>
 
   
-  <section id="contact_frm">
+  <section id="section_contact">
     <div class="container">
       <div class="flexbox flexbox--frm">
         <div class="content_left">
