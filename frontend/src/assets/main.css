@@ -69,7 +69,12 @@ html {
   display: flex; 
   flex-direction: row; 
   justify-content: space-between;
+}
 
+@media (min-width: 62rem) {
+  .header_nav {
+    flex: 1 0 auto;
+  }
 }
 
 .header_nav__ul {
